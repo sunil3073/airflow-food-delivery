@@ -1,0 +1,13 @@
+food_delivery_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: FOHMZVX-XS05522
+      user: sunil
+      password: Sunil@7993385512
+      role: ACCOUNTADMIN
+      database: FOOD_DELIVERY_DB
+      warehouse: FOOD_DWH
+      schema: staging_dev
+      threads: 4
